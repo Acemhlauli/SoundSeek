@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Mhlauli Ayanda">
+  <meta name="description" content="SoundSeek is your go-to destination for discovering and exploring the vast world of music. Our powerful search engine scours the internet to bring you the latest tracks, albums, and artists. Whether you're a seasoned music aficionado or a casual listener, SoundSeek has something for everyone."
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png">
+  <title>SoundSeek™</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="SoundSeek Logo" id="logo">
+    <h1>SoundSeek</h1>
+    <p>Your Journey to Musical Discovery</p>
+  </header>
+  <main>
+    <section id="controls">
+      <article>
+        <label for="genre">Select Genre:</label>
+        <select id="genre">
+          <option value="">All Genres</option>
+          <option value="amapiano">Amapiano</option>
+          <option value="hip-hop">Hip-Hop</option>
+          <option value="house">House</option>
+          <option value="afrobeat">Afrobeat</option>
+          <option value="jazz">Jazz</option>
+          <option value="gqom">Gqom</option>
+          <option value="kwaito">Kwaito</option>
+        </select>
+      </article>
+      <article>
+        <label for="year">Year of Release:</label>
+        <select id="year">
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+        </select>
+      </article>
+      <section id="search-section">
+        <label>Search by:</label>
+        <input type="radio" name="searchType" value="song" checked> Song
+        <input type="radio" name="searchType" value="artist"> Artist
+        <input type="radio" name="searchType" value="album"> Album
+        <input type="text" id="search" placeholder="Enter search term">
+        <button id="searchButton">Search</button>
+      </section>
+    </section>
+    <section id="results">
+      <h2>Top 10 Songs</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody id="resultsTable">
+            <script src="script.js"></script>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 SoundSeek. All rights reserved.</p>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="mailto:ayandamhlauli0@gmail.com">>Contact</a>
+      <p>Follow me on:
+        <a href="https://www.linkedin.com/in/mhlauliayanda/">LinkedIn</a> |
+        <a href="https://github.com/Acemhlauli">Github</a>        
+    </p>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
